@@ -1,57 +1,304 @@
+<div align="center">
+
 # Hi, I'm Ahmed Walid Bouanzoul 👋
 
-**AI Engineer in the making — LLMs, RAG & Agentic Systems**
+### AI Engineer in the making — LLMs · RAG · Agentic Systems
 
-M2 Systèmes Intelligents student at Sorbonne Université (Paris) · Currently looking for a **6-month end-of-studies internship (PFE)**, starting Jan/Feb 2027, in LLM Engineering, RAG, Agentic AI or AI Engineering.
+**M2 Systèmes Intelligents @ Sorbonne Université · Paris**
+
+<br>
+
+<a href="YOUR_LINKEDIN_URL">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="YOUR_EMAIL">
+  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<br><br>
+
+> **Building, evaluating and deploying reliable AI systems — beyond the prompt.**
+
+<br>
+
+🟢 **OPEN TO WORK — 6-MONTH PFE INTERNSHIP · JAN/FEB 2027**
+
+</div>
 
 ---
 
 ## About Me
 
-I build systems around large language models — not just prompts, but the retrieval, evaluation, and monitoring layers that make them reliable enough to ship. My background is in electronics and automation (Licence EEA) before specializing in AI, which pushes me toward treating LLM systems the way I was trained to treat any engineered system: measure it, validate it, document what breaks.
+I'm a **Master's student in Intelligent Systems at Sorbonne Université**, focused on building reliable systems around **Large Language Models**.
 
-Most of what's below started as a way to learn RAG and agent architectures properly, and turned into four projects I maintain, benchmark, and keep improving.
+My interests sit at the intersection of:
+
+**LLMs → RAG → Agents → Evaluation → Deployment**
+
+I don't just experiment with prompts.
+
+I like understanding what happens underneath — how information is retrieved, how agents decide which tools to use, how systems behave when they fail, and how to evaluate and monitor them once they leave the notebook.
+
+My background in **electronics and automation (Licence EEA)** also shaped the way I approach AI:
+
+> **Measure it. Validate it. Understand its failure modes. Then ship it.**
+
+Currently looking for a **6-month end-of-studies internship (PFE)** starting **January/February 2027**, in **LLM Engineering, RAG, Agentic AI, Generative AI or AI Engineering**.
+
+---
 
 ## What I Build
 
-- **RAG systems** — dense, lexical, and hybrid retrieval, benchmarked against each other rather than assumed
-- **Multi-agent systems** — tool-using agents (LangGraph, ReAct) with explicit evaluation harnesses
-- **LLM applications** — fine-tuning (QLoRA), deployment (FastAPI/Docker), and sector-specific use cases
-- **Evaluation & observability** — drift detection, production monitoring (Prometheus/Grafana), scenario-based agent evaluation
-- **ML systems** — from classic baselines to deep learning, compared honestly rather than defaulting to the trendiest model
+<table>
+<tr>
+<td width="50%">
 
-## Featured Projects
+### 🔎 RAG Systems
 
-### 🤖 [AgentForge](https://github.com/AhmedWalidbou/AgentForge)
-End-to-end multi-agent LLM system: a RAG engine (Qdrant, RAGAS score 1.0), a LangGraph orchestration layer, and a fine-tuned model (QLoRA on Mistral 7B, eval loss 1.4584, published on Hugging Face). Deployed via FastAPI/Docker across 3 distinct sector use cases (legal, finance, technical) to test how far one core stack adapts.
+Dense, lexical and hybrid retrieval systems.
 
-### 🚗 [GarageMind](https://github.com/AhmedWalidbou/GarageMind)
-An agentic vehicle diagnostic copilot. A LangGraph ReAct agent orchestrates 4 tools (repair-case retrieval, DTC/VIN decoding, CAN log analysis) — evaluated on 15 adversarial scenarios: 93% tool-selection accuracy, 100% citation grounding (zero hallucinations), 100% of trap questions correctly declined. Underneath: a hybrid dense+BM25 retriever (RRF fusion) over a bilingual repair-case knowledge base, and a CAN-bus anomaly detector (LSTM autoencoder) benchmarked against an Isolation Forest baseline — the baseline wins on some attack types, which is documented rather than hidden.
+I care about **retrieval quality, grounding, temporal knowledge and evaluation**, not just connecting a vector database to an LLM.
 
-### 📈 [FinSentinel](https://github.com/AhmedWalidbou/FinSentinel)
-French financial sentiment classifier (CamemBERT, F1 0.776, [on Hugging Face](https://huggingface.co/Walid692/finsentinel-camembert)) shipped with a full production monitoring stack: FastAPI, Docker, MLflow, Prometheus, and a 12-panel Grafana dashboard. Includes PSI-based drift detection, validated with a controlled drift experiment — plus two documented findings on the model's own limitations (majority-class bias, prediction-drift vs. input-drift).
+</td>
 
-### 🕒 [TempoRAG](https://github.com/AhmedWalidbou/TempoRAG)
-A temporal RAG pipeline: RSS ingestion, temporal parsing, a LangGraph retrieval agent, and a dedicated contradiction-detection agent for catching conflicting information across sources over time.
+<td width="50%">
 
-### 🖼️ Panoptic Segmentation *(academic project)*
-Panoptic segmentation combining instance and semantic prediction (Mask R-CNN, DeepLabV3+), completed as part of my Master's coursework.
+### 🤖 Agentic Systems
 
-## Tech Stack
+Multi-agent and tool-using architectures.
 
-**LLM / GenAI** — LangChain · LangGraph · Qdrant · RAGAS · QLoRA · Hugging Face Hub
-**AI / ML** — PyTorch · Scikit-learn · CamemBERT / Transformers
-**Backend** — FastAPI · Docker
-**MLOps / Observability** — MLflow · Prometheus · Grafana · Git
-**Programming** — Python · SQL · C/C++ · MATLAB
+Exploring **LangGraph, ReAct, tool orchestration and explicit evaluation** rather than black-box agent behavior.
 
-## Currently Looking For
+</td>
+</tr>
 
-🎯 **6-month end-of-studies internship (PFE)**, starting January/February 2027, ideally converting into a full-time role.
+<tr>
+<td width="50%">
 
-Interested in: LLM Engineering · RAG · Agentic AI · Generative AI · AI Engineering · ML Engineering
+### 🧠 LLM Applications
 
-## Contact
+Fine-tuning and domain-specific applications.
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/ahmed-walid-bouanzoul-25648328b/)
-- 📧 [Ahmed.Walid.Bouanzoul@gmail.com](mailto:Ahmed.Walid.Bouanzoul@gmail.com)
+From **QLoRA / Transformers** to API-based deployment and real-world use cases.
+
+</td>
+
+<td width="50%">
+
+### 📊 Evaluation & Observability
+
+Making AI systems measurable.
+
+**RAG evaluation, agent benchmarks, drift detection, monitoring and failure analysis.**
+
+</td>
+</tr>
+</table>
+
+---
+
+# Featured Projects
+
+## 🤖 AgentForge
+
+### Production-oriented Multi-Agent LLM System
+
+An end-to-end system combining **Advanced RAG, multi-agent orchestration, evaluation and fine-tuning**.
+
+**Architecture**
+
+`User → RAG → LangGraph Agents → Tools → LLM → Evaluation`
+
+**Highlights**
+
+- Advanced RAG pipeline using **Qdrant**
+- Multi-agent orchestration with **LangGraph**
+- RAG evaluation with **RAGAS**
+- **QLoRA fine-tuning** on Mistral 7B
+- FastAPI + Docker deployment
+- Tested across **legal, finance and technical** use cases
+- Fine-tuned model published on Hugging Face
+
+**Evaluation**
+
+`RAGAS: 1.0` · `Eval Loss: 1.4584`
+
+<br>
+
+🔗 **[Explore AgentForge →](YOUR_AGENTFORGE_URL)**
+
+---
+
+## 🚗 GarageMind
+
+### Agentic Vehicle Diagnostic Copilot
+
+An AI diagnostic system combining **LLM agents, hybrid RAG, CAN-bus analysis and anomaly detection**.
+
+The core is a **LangGraph ReAct agent** capable of orchestrating diagnostic tools for:
+
+- Repair-case retrieval
+- DTC / VIN decoding
+- CAN log analysis
+- Agentic troubleshooting
+
+**Retrieval**
+
+`Dense Retrieval + BM25 → RRF Fusion → Context`
+
+**Evaluation**
+
+- 15 adversarial scenarios
+- 93% tool-selection accuracy
+- 100% citation grounding
+- 100% correct rejection of trap questions
+
+The project also compares a **LSTM Autoencoder** against an **Isolation Forest** baseline for CAN-bus anomaly detection — including cases where the simpler baseline performs better.
+
+> I believe good AI engineering also means documenting when the "fancier" model loses.
+
+<br>
+
+🔗 **[Explore GarageMind →](YOUR_GARAGEMIND_URL)**
+
+---
+
+## 📈 FinSentinel
+
+### Financial Sentiment Analysis · MLOps · Model Monitoring
+
+A French financial sentiment classifier built with **CamemBERT**, deployed with a complete production monitoring stack.
+
+**Pipeline**
+
+`Data → CamemBERT → FastAPI → Docker → MLflow → Prometheus → Grafana`
+
+**Highlights**
+
+- CamemBERT fine-tuning
+- F1 score: **0.776**
+- FastAPI inference service
+- Dockerized deployment
+- MLflow experiment tracking
+- Prometheus monitoring
+- 12-panel Grafana dashboard
+- PSI-based drift detection
+- Controlled drift experiment
+
+The project also investigates model limitations such as:
+
+- Majority-class bias
+- Prediction drift vs input drift
+- Behavior under controlled distribution changes
+
+<br>
+
+🔗 **[Explore FinSentinel →](YOUR_FINSENTINEL_URL)**
+
+---
+
+## 🕒 TempoRAG
+
+### Temporal Retrieval-Augmented Generation
+
+A RAG system designed around a problem often ignored in standard RAG pipelines:
+
+> **What happens when the knowledge itself changes over time?**
+
+**Pipeline**
+
+`RSS → Temporal Parsing → Retrieval → Agent → Contradiction Detection`
+
+Includes:
+
+- RSS ingestion
+- Temporal information extraction
+- LangGraph retrieval agent
+- Knowledge drift handling
+- Contradiction detection
+- Cross-source temporal reasoning
+
+The goal is to explore how RAG systems can remain reliable when sources evolve and information becomes contradictory.
+
+<br>
+
+🔗 **[Explore TempoRAG →](YOUR_TEMPORAG_URL)**
+
+---
+
+## 🖼️ Panoptic Segmentation
+
+### Academic Project · Master's Coursework
+
+Computer vision project combining:
+
+- **Mask R-CNN** for instance segmentation
+- **DeepLabV3+** for semantic segmentation
+- Panoptic segmentation pipeline
+
+A project from my Master's coursework exploring deep learning for image understanding.
+
+<br>
+
+🔗 **[Explore Project →](YOUR_PANOPTIC_URL)**
+
+---
+
+# Tech Stack
+
+<div align="center">
+
+### LLM / Generative AI
+
+`LangChain` `LangGraph` `Qdrant` `RAGAS` `QLoRA` `Hugging Face` `Transformers`
+
+### Machine Learning
+
+`PyTorch` `Scikit-learn` `CamemBERT` `Deep Learning`
+
+### Backend & Deployment
+
+`Python` `FastAPI` `Docker`
+
+### MLOps & Observability
+
+`MLflow` `Prometheus` `Grafana` `Git`
+
+### Programming
+
+`Python` `SQL` `C/C++` `MATLAB`
+
+</div>
+
+---
+
+# Engineering Interests
+
+```text
+                    ┌──────────────────────┐
+                    │       LLMs           │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │        RAG           │
+                    │ Retrieval & Grounding│
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       AGENTS         │
+                    │ Tools & Orchestration│
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     EVALUATION       │
+                    │ Benchmarks & Metrics │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      PRODUCTION      │
+                    │ Deploy & Monitor     │
+                    └──────────────────────┘
