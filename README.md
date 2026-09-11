@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hi, I'm Ahmed Walid Bouanzoul 👋
+# Hi, I'm Ahmed 👋
 
-### AI Engineer in the making — LLMs · RAG · Agentic Systems
+### AI Engineer in the making · LLMs · RAG · Agentic Systems
 
 **M2 Systèmes Intelligents @ Sorbonne Université · Paris**
 
@@ -21,7 +21,7 @@
 
 <br>
 
-🟢 **OPEN TO WORK — 6-MONTH PFE INTERNSHIP · JAN/FEB 2027**
+🟢 **OPEN TO WORK · 6-MONTH PFE INTERNSHIP · FEB 2027**
 
 </div>
 
